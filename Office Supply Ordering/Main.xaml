@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:this="clr-namespace:" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisad="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamf="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Filters;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamt="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Triggers;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umau="clr-namespace:UiPath.MicrosoftOffice365.Activities.Utilities;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umm="clr-namespace:UiPath.MicrosoftOffice365.Models;assembly=UiPath.MicrosoftOffice365" xmlns:ummm="clr-namespace:UiPath.MicrosoftOffice365.Mail.Models;assembly=UiPath.MicrosoftOffice365" xmlns:usaa="clr-namespace:UiPath.Shared.Activities.AttachedProperties;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:this="clr-namespace:" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisad="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamf="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Filters;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamt="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Triggers;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umau="clr-namespace:UiPath.MicrosoftOffice365.Activities.Utilities;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umm="clr-namespace:UiPath.MicrosoftOffice365.Models;assembly=UiPath.MicrosoftOffice365" xmlns:ummm="clr-namespace:UiPath.MicrosoftOffice365.Mail.Models;assembly=UiPath.MicrosoftOffice365" xmlns:usaa="clr-namespace:UiPath.Shared.Activities.AttachedProperties;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="UiPathEventConnector" Type="InArgument(x:String)" />
     <x:Property Name="UiPathEvent" Type="InArgument(x:String)" />
@@ -162,6 +162,15 @@
       <x:String>UiPath.MicrosoftOffice365.Mail.Models</x:String>
       <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
       <x:String>UiPath.MicrosoftOffice365.Activities.Mail</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -287,9 +296,12 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="902.4000000000001,1463.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1062.6666666666667,2798" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="budgetFilePath" />
       <Variable x:TypeArguments="x:Double" Name="retrievedBudget" />
@@ -300,88 +312,168 @@
       <Variable x:TypeArguments="uisad:IDocumentData(uisad:ExtendedExtractionResultsForDocumentData)" Name="extractionResults" />
       <Variable x:TypeArguments="umm:Office365Message" Name="ReceivedEmail" />
       <Variable x:TypeArguments="umau:JobInformation" Name="JobInfo" />
-      <Variable x:TypeArguments="ummm:O365AttachmentLocalItem[]" Default="[new UiPath.MicrosoftOffice365.Mail.Models.O365AttachmentLocalItem() {  }]" Name="DownloadedAttachments" />
+      <Variable x:TypeArguments="ummm:O365AttachmentLocalItem[]" Name="DownloadedAttachments" />
       <Variable x:TypeArguments="x:String" Name="variable1" />
+      <Variable x:TypeArguments="x:String" Name="test" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <umamt:NewEmailReceived BrowserFolderName="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" AuthScopesInvalid="False" BodyAsHtml="False" ConnectionId="0d7e209d-c780-42e2-8cf2-2a5cb7981103" DisplayName="When email received with subject &quot;Purchase Request&quot;" FilterExpression="(hasAttachments==`true`)&amp;&amp;((contains(subject,'Purchase Request')))" sap:VirtualizedContainerService.HintSize="516.8,360.8" sap2010:WorkflowViewState.IdRef="NewEmailReceived_1" IncludeAttachments="False" JobData="[JobInfo]" MarkAsRead="False" Result="[ReceivedEmail]" UiPathEvent="[UiPathEvent]" UiPathEventConnector="[UiPathEventConnector]" UiPathEventObjectId="[UiPathEventObjectId]" UiPathEventObjectType="[UiPathEventObjectType]" UseConnectionService="True" UseSharedMailbox="True" WithAttachmentsOnly="True">
-      <usaa:AutopilotCustomInit.CustomInit>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:String x:Key="_BrowserFolderName">Inbox</x:String>
-        </scg:Dictionary>
-      </usaa:AutopilotCustomInit.CustomInit>
-      <umamt:NewEmailReceived.Filter>
-        <umamf:TriggerMailFilterCollection LogicalOperator="And">
-          <umamf:TriggerMailFilterCollection.Filters>
-            <umamf:TriggerMailFilterElement ImportanceValuesList="{x:Null}" ArrayStringOperator="Contains" BodyOperator="Contains" Criteria="Subject" ImportanceOperator="Equals" ImportanceValue="Low" StringOperator="Contains" StringValue="Purchase Request" TypeOperator="Equals" TypeValue="Email" />
-          </umamf:TriggerMailFilterCollection.Filters>
-        </umamf:TriggerMailFilterCollection>
-      </umamt:NewEmailReceived.Filter>
-      <umamt:NewEmailReceived.MailboxBackup>
-        <usau:BackupSlot x:TypeArguments="umame:MailboxSelectionMode" StoredValue="UseMailbox">
-          <usau:BackupSlot.BackupValues>
-            <scg:List x:TypeArguments="x:Object" x:Key="NoMailbox" Capacity="1">
-              <x:Null />
-            </scg:List>
-            <scg:List x:TypeArguments="x:Object" x:Key="UseMailbox" Capacity="1">
-              <x:Null />
-            </scg:List>
-          </usau:BackupSlot.BackupValues>
-        </usau:BackupSlot>
-      </umamt:NewEmailReceived.MailboxBackup>
-    </umamt:NewEmailReceived>
-    <umam:DownloadEmailAttachments ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Filter="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" ConnectionId="0d7e209d-c780-42e2-8cf2-2a5cb7981103" DisplayName="Download email attachments" Email="[ReceivedEmail]" ExcludeInlineAttachments="True" FilterByFileNames="*.pdf" sap:VirtualizedContainerService.HintSize="516.8,236.8" sap2010:WorkflowViewState.IdRef="DownloadEmailAttachments_1" NewResult="[DownloadedAttachments]" SearchMode="UseSimple" UseConnectionService="True" />
-    <ui:ForEach x:TypeArguments="ummm:O365AttachmentLocalItem" CurrentIndex="{x:Null}" DisplayName="Save attachment to specified folder" sap:VirtualizedContainerService.HintSize="516.8,373.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[DownloadedAttachments]">
-      <ui:ForEach.Body>
-        <ActivityAction x:TypeArguments="ummm:O365AttachmentLocalItem">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="ummm:O365AttachmentLocalItem" Name="currentO365AttachmentLocalItem" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,243.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
-            <sap:WorkflowViewStateService.ViewState>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="588.6666666666666,532.6666666666666" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignorierte Aktivitäten" sap:VirtualizedContainerService.HintSize="450,420.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <umamt:NewEmailReceived BrowserFolderName="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" AuthScopesInvalid="False" BodyAsHtml="False" ConnectionId="0d7e209d-c780-42e2-8cf2-2a5cb7981103" DisplayName="When email received with subject &quot;Purchase Request&quot;" FilterExpression="(hasAttachments==`true`)&amp;&amp;((contains(subject,'Purchase Request')))" sap:VirtualizedContainerService.HintSize="416,360.6666666666667" sap2010:WorkflowViewState.IdRef="NewEmailReceived_1" IncludeAttachments="False" JobData="[JobInfo]" MarkAsRead="False" Result="[ReceivedEmail]" UiPathEvent="[UiPathEvent]" UiPathEventConnector="[UiPathEventConnector]" UiPathEventObjectId="[UiPathEventObjectId]" UiPathEventObjectType="[UiPathEventObjectType]" UseConnectionService="True" UseSharedMailbox="True" WithAttachmentsOnly="True">
+            <usaa:AutopilotCustomInit.CustomInit>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:String x:Key="_BrowserFolderName">Inbox</x:String>
               </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:MoveFile ContinueOnError="{x:Null}" Destination="{x:Null}" DestinationResource="{x:Null}" Path="{x:Null}" PathResource="{x:Null}" DisplayName="Move the attachment to the specified folder" sap:VirtualizedContainerService.HintSize="382.4,183.2" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" />
-          </Sequence>
-        </ActivityAction>
-      </ui:ForEach.Body>
-    </ui:ForEach>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="516.8,468.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
-      <ueab:ExcelProcessScopeX.Body>
-        <ActivityAction x:TypeArguments="ui:IExcelProcess">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
-          </ActivityAction.Argument>
-          <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="483.2,359.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[budgetFilePath]">
-            <ueab:ExcelApplicationCard.Body>
-              <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+            </usaa:AutopilotCustomInit.CustomInit>
+            <umamt:NewEmailReceived.Filter>
+              <umamf:TriggerMailFilterCollection LogicalOperator="And">
+                <umamf:TriggerMailFilterCollection.Filters>
+                  <umamf:TriggerMailFilterElement ImportanceValuesList="{x:Null}" ArrayStringOperator="Contains" BodyOperator="Contains" Criteria="Subject" ImportanceOperator="Equals" ImportanceValue="Low" StringOperator="Contains" StringValue="Purchase Request" TypeOperator="Equals" TypeValue="Email" />
+                </umamf:TriggerMailFilterCollection.Filters>
+              </umamf:TriggerMailFilterCollection>
+            </umamt:NewEmailReceived.Filter>
+            <umamt:NewEmailReceived.MailboxBackup>
+              <usau:BackupSlot x:TypeArguments="umame:MailboxSelectionMode" StoredValue="UseMailbox">
+                <usau:BackupSlot.BackupValues>
+                  <scg:List x:TypeArguments="x:Object" x:Key="NoMailbox" Capacity="1">
+                    <x:Null />
+                  </scg:List>
+                  <scg:List x:TypeArguments="x:Object" x:Key="UseMailbox" Capacity="1">
+                    <x:Null />
+                  </scg:List>
+                </usau:BackupSlot.BackupValues>
+              </usau:BackupSlot>
+            </umamt:NewEmailReceived.MailboxBackup>
+          </umamt:NewEmailReceived>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="588.6666666666666,403.3333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignorierte Aktivitäten" sap:VirtualizedContainerService.HintSize="450,291.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <umam:DownloadEmailAttachments ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Filter="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" ConnectionId="0d7e209d-c780-42e2-8cf2-2a5cb7981103" DisplayName="Download email attachments" Email="[ReceivedEmail]" ExcludeInlineAttachments="True" FilterByFileNames="*.pdf" sap:VirtualizedContainerService.HintSize="416,231.33333333333334" sap2010:WorkflowViewState.IdRef="DownloadEmailAttachments_1" NewResult="[DownloadedAttachments]" SearchMode="UseSimple" UseConnectionService="True" />
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="588.6666666666666,542" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignorierte Aktivitäten" sap:VirtualizedContainerService.HintSize="452,430" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ForEach x:TypeArguments="ummm:O365AttachmentLocalItem" CurrentIndex="{x:Null}" DisplayName="Save attachment to specified folder" sap:VirtualizedContainerService.HintSize="418,370" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[DownloadedAttachments]">
+            <ui:ForEach.Body>
+              <ActivityAction x:TypeArguments="ummm:O365AttachmentLocalItem">
                 <ActivityAction.Argument>
-                  <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  <DelegateInArgument x:TypeArguments="ummm:O365AttachmentLocalItem" Name="currentO365AttachmentLocalItem" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,247.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_8">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:MoveFile ContinueOnError="{x:Null}" Destination="{x:Null}" DestinationResource="{x:Null}" Path="{x:Null}" PathResource="{x:Null}" DisplayName="Move the attachment to the specified folder" sap:VirtualizedContainerService.HintSize="382,187.33333333333334" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" />
                 </Sequence>
               </ActivityAction>
-            </ueab:ExcelApplicationCard.Body>
-          </ueab:ExcelApplicationCard>
+            </ui:ForEach.Body>
+          </ui:ForEach>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="588.6666666666666,653.3333333333334" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignorierte Aktivitäten" sap:VirtualizedContainerService.HintSize="552,541.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="518,481.3333333333333" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+            <ueab:ExcelProcessScopeX.Body>
+              <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                </ActivityAction.Argument>
+                <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="484,371.3333333333333" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[budgetFilePath]">
+                  <ueab:ExcelApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </ActivityAction>
+                  </ueab:ExcelApplicationCard.Body>
+                </ueab:ExcelApplicationCard>
+              </ActivityAction>
+            </ueab:ExcelProcessScopeX.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ueab:ExcelProcessScopeX>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Neuer Tab" sap:VirtualizedContainerService.HintSize="588.6666666666666,644" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="fa594fae-f912-4e73-b67b-eddccde80be3" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="450,402" sap2010:WorkflowViewState.IdRef="Sequence_21">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="416,116.66666666666667" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" Url="https://www.bueromarkt-ag.de/" Version="V4" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT autocomplete-0-in…'" sap:VirtualizedContainerService.HintSize="416,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fa594fae-f912-4e73-b67b-eddccde80be3" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="bueromarkt-ag.de" CVScreenId="44b0de47-59a3-4e1f-8ce9-ed0c2896a855" ContentHash="zVEcV88Lpk24Ln4nDkCyHg" CvTextArea="419, 264, 361, 22" CvTextArgument="Suche in über 200.000 Artikeln..." CvType="Text" DesignTimeRectangle="415, 253, 563, 45" DesignTimeScaleFactor="1.5" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='aa-Input' placeholder='Suche in über 200.000 Artikeln...' aaname='' /&gt;" Guid="8db67f64-17ee-4919-9d25-749412fe823d" InformativeScreenshot="2f63c6778f60b1af557adbd989d17e7a.png" Reference="9KIg6ddWlEujCaTHcwL-nQ/CPTw6xczT0izKVO8tFW6kA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Böttcher AG – Nr. 1 für B2B Kunden mit günstigen Preisen' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
         </ActivityAction>
-      </ueab:ExcelProcessScopeX.Body>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ueab:ExcelProcessScopeX>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-13, 0, 1575, 1110" BrowserType="Edge" ContentHash="mnSbcUKqiUecuZMmNyG8ow" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAQhJREFUWEftl9ENwjAMRDsCIzAKm8AGsAGMwEaMwgiMQP0qTkKy09YkfCDypJNKnFzckLTu0AnYmW6mh+nZUHjuTbOcTdHglmKOkINJnS6mjSlCfTLgdTJpLKvsYIkI0nGOTxIQ3Bhjmcsh49Kdi5oE8GYs+8ux1libczv9ylOcZ20CWsZaOYqBgKup9pg6ioHG9AR6Ar+XAG8wjtz9dS2y7SKdAEaKYSyy7UIxRymAiWKYi2y7UMxRCvCaxghjrkW2XaQTaE1PoCdQnEfHZ6kkq0ElWZiAilIqnm9xNDFHWJRSKis7KuOWK4HX+zdH9IieaFXvzWlxhXl66e9oJfYXnuEHyT8zDCPMjw3PbnWtNQAAAABJRU5ErkJggg==" InformativeScreenshot="7715710a61454e2e8424bcb373b994c1.png" Reference="9KIg6ddWlEujCaTHcwL-nQ/Q517DhiG9UGandKMVNsVmw" Selector="&lt;html app='msedge.exe' title='Neuer Tab' /&gt;" Title="Neuer Tab" Url="edge://newtab/" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
   </Sequence>
 </Activity>
