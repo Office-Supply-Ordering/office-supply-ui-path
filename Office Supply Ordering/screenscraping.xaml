@@ -279,7 +279,7 @@
       <AssemblyReference>Microsoft.CodeAnalysis.Features</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="941.9999999999999,2858.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_14">
+  <Sequence sap:VirtualizedContainerService.HintSize="912.0000000000001,2808.8" sap2010:WorkflowViewState.IdRef="Sequence_14">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(x:String)" Name="requiredMaterials" />
       <Variable x:TypeArguments="sd:DataTable" Name="prices" />
@@ -291,7 +291,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uasc:BuildCollection x:TypeArguments="x:String" Items="{x:Null}" DisplayName="Build Collection" FirstItem="Kugelschreiber 0,5mm" sap:VirtualizedContainerService.HintSize="538,177.33333333333334" sap2010:WorkflowViewState.IdRef="BuildCollection`1_2" Result="[requiredMaterials]">
+    <uasc:BuildCollection x:TypeArguments="x:String" Items="{x:Null}" DisplayName="Build Collection" FirstItem="Kugelschreiber 0,5mm" sap:VirtualizedContainerService.HintSize="536,174.4" sap2010:WorkflowViewState.IdRef="BuildCollection`1_2" Result="[requiredMaterials]">
       <uasc:BuildCollection.NextItems>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
           <InArgument x:TypeArguments="x:String">Druckpapier 500 Blatt (A4, 80g/m)</InArgument>
@@ -299,7 +299,7 @@
         </scg:List>
       </uasc:BuildCollection.NextItems>
     </uasc:BuildCollection>
-    <Assign sap:VirtualizedContainerService.HintSize="538,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_9">
+    <Assign sap:VirtualizedContainerService.HintSize="536,113.6" sap2010:WorkflowViewState.IdRef="Assign_9">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[quantity]</OutArgument>
       </Assign.To>
@@ -307,7 +307,7 @@
         <InArgument x:TypeArguments="x:Int32">10</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="538,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_10">
+    <Assign sap:VirtualizedContainerService.HintSize="536,113.6" sap2010:WorkflowViewState.IdRef="Assign_10">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Decimal">[requiredBudget]</OutArgument>
       </Assign.To>
@@ -315,13 +315,13 @@
         <InArgument x:TypeArguments="x:Decimal">0</InArgument>
       </Assign.Value>
     </Assign>
-    <uix:NApplicationCard DisplayName="Edge Böttcher AG – Nr. 1 für B2B Kunden mit g" sap:VirtualizedContainerService.HintSize="538,2256.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="8235f62b-96dc-463e-878d-0a43d0d5da47">
+    <uix:NApplicationCard DisplayName="Edge Böttcher AG – Nr. 1 für B2B Kunden mit g" sap:VirtualizedContainerService.HintSize="536,2218.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="8235f62b-96dc-463e-878d-0a43d0d5da47">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="504,2005.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="502.4,1969.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="variable1" />
             </Sequence.Variables>
@@ -330,25 +330,26 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="470,1942.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[requiredMaterials]">
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="468.8,1908" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[requiredMaterials]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:String">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Hauptteil" sap:VirtualizedContainerService.HintSize="468,1817.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <Sequence DisplayName="Hauptteil" sap:VirtualizedContainerService.HintSize="467.2,1784.8" sap2010:WorkflowViewState.IdRef="Sequence_13">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:Decimal" Name="minValue" />
                       <Variable x:TypeArguments="scg:List(x:Decimal)" Name="tempPriceList" />
+                      <Variable x:TypeArguments="sd:DataTable" Name="prices" />
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT autocomplete-0-in…'" sap:VirtualizedContainerService.HintSize="434,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8235f62b-96dc-463e-878d-0a43d0d5da47" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT autocomplete-0-in…'" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8235f62b-96dc-463e-878d-0a43d0d5da47" Version="V4">
                       <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="bueromarkt-ag.de" CVScreenId="5fa92dc5-8f80-4369-8eef-5e6cb96d027f" ContentHash="ibrZ_lpWF0WcXsi1YxQlMw" CvElementArea="629, 242, 878, 65" CvType="InputBox" DesignTimeRectangle="635, 253, 738, 45" DesignTimeScaleFactor="1.5" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='aa-Input' placeholder='Suche in über 200.000 Artikeln...' aaname='' /&gt;" Guid="d4247a5f-011c-4cb2-a434-e716d1708112" InformativeScreenshot="874826eed7d8a48b6233e09dc877ff40.png" Reference="9KIg6ddWlEujCaTHcwL-nQ/APnyvH2340GyphxtRf-DAA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Böttcher AG – Nr. 1 für B2B Kunden mit günstigen Preisen' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        <uix:TargetAnchorable BrowserURL="bueromarkt-ag.de" CVScreenId="cdf5fd6a-78bd-4a61-b2d6-be1e0b08ad35" CvElementArea="418, 204, 728, 54" CvType="InputBox" DesignTimeRectangle="422, 213, 615, 37" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='aa-Input' placeholder='Suche in über 200.000 Artikeln...' aaname='' /&gt;" Guid="37749a41-d8d2-43aa-9b83-46e45093b0f2" InformativeScreenshot="c90f59a79a0a424190a91f76fd1bf4e7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Böttcher AG – Nr. 1 für B2B Kunden mit günstigen Preisen' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
                       <uix:NClick.VerifyOptions>
                         <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -361,9 +362,9 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT autocomplete-0-in…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="8235f62b-96dc-463e-878d-0a43d0d5da47" Text="[currentText]" Version="V4">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT autocomplete-0-in…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="8235f62b-96dc-463e-878d-0a43d0d5da47" Text="[currentText]" Version="V4">
                       <uix:NTypeInto.Target>
-                        <uix:TargetAnchorable BrowserURL="bueromarkt-ag.de" CVScreenId="5fa92dc5-8f80-4369-8eef-5e6cb96d027f" ContentHash="ibrZ_lpWF0WcXsi1YxQlMw" CvElementArea="629, 242, 878, 65" CvType="InputBox" DesignTimeRectangle="635, 253, 738, 45" DesignTimeScaleFactor="1.5" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='aa-Input' placeholder='Suche in über 200.000 Artikeln...' aaname='' /&gt;" Guid="d4247a5f-011c-4cb2-a434-e716d1708112" InformativeScreenshot="874826eed7d8a48b6233e09dc877ff40.png" Reference="9KIg6ddWlEujCaTHcwL-nQ/APnyvH2340GyphxtRf-DAA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Böttcher AG – Nr. 1 für B2B Kunden mit günstigen Preisen' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        <uix:TargetAnchorable BrowserURL="bueromarkt-ag.de" CVScreenId="f4bd0d74-4a46-4222-bf82-becd7f94a6a7" CvElementArea="418, 204, 728, 54" CvType="InputBox" DesignTimeRectangle="422, 213, 615, 37" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='aa-Input' placeholder='Suche in über 200.000 Artikeln...' aaname='' /&gt;" Guid="abb5e21e-8928-4c77-aff4-7ff65075ee60" InformativeScreenshot="c90f59a79a0a424190a91f76fd1bf4e7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Böttcher AG – Nr. 1 für B2B Kunden mit günstigen Preisen' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                       </uix:NTypeInto.Target>
                       <uix:NTypeInto.VerifyOptions>
                         <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
@@ -376,9 +377,9 @@
                         </uix:VerifyExecutionTypeIntoOptions>
                       </uix:NTypeInto.VerifyOptions>
                     </uix:NTypeInto>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="434,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8235f62b-96dc-463e-878d-0a43d0d5da47" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8235f62b-96dc-463e-878d-0a43d0d5da47" Version="V4">
                       <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="bueromarkt-ag.de" ContentHash="b0dsYKsTOky8M_WQxUkvTA" DesignTimeRectangle="1438, 245, 70, 60" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='aa-SubmitButton' aaname='Suche' /&gt;" Guid="9d1e3f08-d1a6-42c5-b2f3-1e86152dc892" InformativeScreenshot="93b0b959d572d90d90120ba54d3c1dc6.png" Reference="9KIg6ddWlEujCaTHcwL-nQ/2hwKH7gezk61Hd1NR4BPwg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Böttcher AG – Nr. 1 für B2B Kunden mit günstigen Preisen' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                        <uix:TargetAnchorable BrowserURL="bueromarkt-ag.de" DesignTimeRectangle="1091, 206, 58, 50" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='aa-SubmitButton' aaname='Suche' /&gt;" Guid="d8f8e1cd-c18b-4062-963c-6583261fef1b" InformativeScreenshot="2d2606c33f21a6fd1283c94f5f41eee5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Böttcher AG – Nr. 1 für B2B Kunden mit günstigen Preisen' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
                       <uix:NClick.VerifyOptions>
                         <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -391,12 +392,12 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[prices]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='prices'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="434,192" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="8235f62b-96dc-463e-878d-0a43d0d5da47" Version="V4">
+                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[prices]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='prices'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="8235f62b-96dc-463e-878d-0a43d0d5da47" Version="V4">
                       <uix:NExtractData.Target>
-                        <uix:TargetAnchorable BrowserURL="https://www.bueromarkt-ag.de/kugelschreiber.html" ContentHash="p7SaOcatLEOeXM3P0kKuoA" DesignTimeRectangle="658, 1015, 1522, 8035" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl id='product-container' tag='DIV' /&gt;" Guid="96115bff-57fd-4b96-b865-44151ddf3c07" InformativeScreenshot="d8eac14333844f7f4a8e842c27c8ebd9.png" Reference="9KIg6ddWlEujCaTHcwL-nQ/yoy7yAftFEW1uBhEG9u7yA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Kugelschreiber günstig kaufen ➤ Bestpreise' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                        <uix:TargetAnchorable BrowserURL="https://www.bueromarkt-ag.de/kugelschreiber.html" DesignTimeRectangle="441, 474, 1268, 6678" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl id='product-container' tag='DIV' /&gt;" Guid="440cf568-fdea-401f-baca-5b47e5af57ca" InformativeScreenshot="42897fcf8ca3c79399cc9243cfeea848.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Kugelschreiber günstig kaufen ➤ Bestpreise' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                       </uix:NExtractData.Target>
                     </uix:NExtractData>
-                    <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_7">
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_7">
                       <Assign.To>
                         <OutArgument x:TypeArguments="scg:List(x:Decimal)">[tempPriceList]</OutArgument>
                       </Assign.To>
@@ -404,7 +405,7 @@
                         <InArgument x:TypeArguments="scg:List(x:Decimal)">[new List(Of Decimal)]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[prices]" DisplayName="Für jede Zeile in der Stücke-Daten Tabelle" sap:VirtualizedContainerService.HintSize="434,292" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[prices]" DisplayName="Für jede Zeile in der Stücke-Daten Tabelle" sap:VirtualizedContainerService.HintSize="433.6,289.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
@@ -416,12 +417,12 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <AddToCollection x:TypeArguments="x:Decimal" Collection="[tempPriceList]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="AddToCollection`1_2" Item="[Convert.ToDecimal(String.Join(&quot;, &quot;, CurrentRow.ItemArray).Replace(&quot;€&quot;, &quot;&quot;).Replace(&quot;,&quot;, &quot;.&quot;).Trim)]" />
+                            <AddToCollection x:TypeArguments="x:Decimal" Collection="[tempPriceList]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="AddToCollection`1_2" Item="[Convert.ToDecimal(String.Join(&quot;, &quot;, CurrentRow.ItemArray).Replace(&quot;€&quot;, &quot;&quot;).Replace(&quot;,&quot;, &quot;.&quot;).Trim)]" />
                           </Sequence>
                         </ActivityAction>
                       </ui:ForEachRow.Body>
                     </ui:ForEachRow>
-                    <Assign DisplayName="Weisen Sie minValue = tempPriceList.Min() zu" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_6">
+                    <Assign DisplayName="Weisen Sie minValue = tempPriceList.Min() zu" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_6">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Decimal">[minValue]</OutArgument>
                       </Assign.To>
@@ -429,8 +430,8 @@
                         <InArgument x:TypeArguments="x:Decimal">[tempPriceList.Min]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Trace" Message="[minValue]" />
-                    <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_8">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Trace" Message="[minValue]" />
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_8">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Decimal">[requiredBudget]</OutArgument>
                       </Assign.To>
@@ -446,9 +447,9 @@
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-13, 0, 1575, 1110" BrowserType="Edge" ContentHash="gERPfuaJFEel9irxAo_PYw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEpSURBVDhPY/h/O/Q/BfgfTgNObY75P703BY43Lkj4f3pLLIY6nAZUV2T817MrxcDWHkX/nxyLhKvDaUBIdB5YQ15eFtg103pS4IaA2DB1WA34dDEMrnjD/ESwGMhWdDEQxmrA3pXxcMWh0fn/k1JzwE4H8Tub0lHUYjUA2bnIGGRIZ1MailqsBiSm5II1gPwPE1s8LQluEMFAhCkEaYKJIbsKFEYwcQwDQCEOUwjzP4iGiYGiF1k9hgHITkXGIG8hhz4MM4BCHJbakJ2GD4PCJjsnG8xmAGkCRQ3IFo+ggv9LpidjTbIgr+1bFQe2yNKt6L9vaAHEAJiC00AFIP9ZuRdjOB+GQXKgwMQbiCAMsg3kX5BiEAZ58/qeaAx1IAwy4B+6IPE49B8A4cLI+5mGU+kAAAAASUVORK5CYII=" InformativeScreenshot="b86fecb7225e27d75842c6e68c115c2b.jpg" Reference="9KIg6ddWlEujCaTHcwL-nQ/-jGxQ1EaNkWkUl_1i2W_hg" Selector="&lt;html app='msedge.exe' title='Böttcher AG – Nr. 1 für B2B Kunden mit günstigen Preisen' /&gt;" Title="Böttcher AG – Nr. 1 für B2B Kunden mit günstigen Preisen" Url="https://www.bueromarkt-ag.de/" Version="V1" />
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Edge" ContentHash="gERPfuaJFEel9irxAo_PYw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEpSURBVDhPY/h/O/Q/BfgfTgNObY75P703BY43Lkj4f3pLLIY6nAZUV2T817MrxcDWHkX/nxyLhKvDaUBIdB5YQ15eFtg103pS4IaA2DB1WA34dDEMrnjD/ESwGMhWdDEQxmrA3pXxcMWh0fn/k1JzwE4H8Tub0lHUYjUA2bnIGGRIZ1MailqsBiSm5II1gPwPE1s8LQluEMFAhCkEaYKJIbsKFEYwcQwDQCEOUwjzP4iGiYGiF1k9hgHITkXGIG8hhz4MM4BCHJbakJ2GD4PCJjsnG8xmAGkCRQ3IFo+ggv9LpidjTbIgr+1bFQe2yNKt6L9vaAHEAJiC00AFIP9ZuRdjOB+GQXKgwMQbiCAMsg3kX5BiEAZ58/qeaAx1IAwy4B+6IPE49B8A4cLI+5mGU+kAAAAASUVORK5CYII=" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="197e481e1cf65c46ae6b7d93f108a51e.jpg" Selector="&lt;html app='msedge.exe' title='Böttcher AG – Nr. 1 für B2B Kunden mit günstigen Preisen' /&gt;" Title="Böttcher AG – Nr. 1 für B2B Kunden mit günstigen Preisen" Url="https://www.bueromarkt-ag.de/" Version="V1" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="538,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[requiredBudget]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="536,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[requiredBudget]" />
   </Sequence>
 </Activity>
